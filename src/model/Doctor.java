@@ -1,29 +1,32 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    static int id = 0; // Autoincrement
-    String name;
+public class Doctor extends User {
+
     String speciality;
 
-    public Doctor(){
-        System.out.println("Construyendo el Objeto Doctor");
-        this.name = "Nombre por defecto";
-        this.speciality = "Especialidad por defecto";
-        id++;
-    }
-
-    public Doctor(String name, String speciality) {
-        this.name = name;
+    public Doctor(String name, String email){
+        super(name,email);
+        System.out.println("El nombre del model.Doctor asignado es: " + name);
         this.speciality = speciality;
     }
 
-    public void showName() {
+    /*public void showName() {
         System.out.println(name);
+    }*/
+
+    /*public void showId(){
+        System.out.println("ID model.Doctor: " + id);
+    }*/
+
+    public String getSpeciality() {
+        return speciality;
     }
 
-    public void showId(){
-        System.out.println("ID Doctor: " + id);
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 
     ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();

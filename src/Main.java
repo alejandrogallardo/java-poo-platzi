@@ -1,16 +1,18 @@
 // https://github.com/anncode1/curso-de-java-se-poo
+import model.Doctor;
+import model.Patient;
+
 import java.util.Date;
-import static ui.UIMenu.*;
 
 public class Main {
     public static void main(String[] args) {
 
-        /*Doctor myDoctor = new Doctor();
+        /*model.Doctor myDoctor = new model.Doctor();
         myDoctor.name = "Alejandro Gallardo";
         myDoctor.showName();
         myDoctor.showId();
 
-        Doctor myDoctorAle = new Doctor();
+        model.Doctor myDoctorAle = new model.Doctor();
         myDoctorAle.showId();
 
         showMenu();*/
